@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Maxmillian Woods
+   Date:   10.29.18
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+
+*/
+html {
+    height: 100%;
+    background: #343a40;
+    width: 100%;
+}
+/* setting the page body to take up full available width */
+body {
+    width: 100%;
+    background: white;
+}
+/* centering images in the body */
+body img {
+    left: auto;
+    right: auto;
+}
+/* main section will be 95% of the body, centered and white */
+.main {
+    display: block;
+    width: 95%;
+    left: auto;
+    right: auto;
+    background: white;
+    padding-bottom: 20px;
+}
+.dropdown-menu {
+    background: #343a40;
+}
+.dropdown-menu .dropdown-item {
+    color: white;
+}
+.dropdown-menu .dropdown-item:hover {
+    color: black;
+    transition: 0.5s;
+}
+.darkgrey {
+    background: #343a40;
+}
+/* setting images in the main container to float to the left margin */
+.main img {
+    float: left;
+    margin-right: 20px;
+}
+/* allowing the text to wrap around the image next to it */
+.main h3 p {
+    display: block;
+    position: relative;
+    clear: both;
+    text-align: justify;
+}
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+footer::after {
+    display: block;
+    clear: both;
+    content: "";
+}
